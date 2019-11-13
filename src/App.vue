@@ -2,17 +2,14 @@
   <div id="app">
     <router-view></router-view>
     <TabBar v-if="$route.meta.flag"/>
-    <Login v-if="!$route.meta.flag"/>
   </div>
 </template>
 <script>
 import TabBar from "./common/components/tabBar"
-import Login from "./pages/login"
 export default {
     name:"App",
     components:{
       TabBar,
-      Login
     }
 };
 </script>

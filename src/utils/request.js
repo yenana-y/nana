@@ -10,7 +10,7 @@ server.interceptors.request.use((config) => {
         config.params = { ...config.data };
     }
       //config.headers["content-type"]="applicetion/json";
-
+        return config;
 },(err)=>{
     return Promise.reject(err);
 })
