@@ -3,7 +3,8 @@
   <div class="header">
     <div class="box">
       <img
-        src="data:image/png;base64,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"
+        src="data:
+        image/png;base64,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"
         alt
       />
       <div class="find">
@@ -61,19 +62,19 @@
         </li>
       </ul>
     </div>
-    <div class="data">
-      <div class="data_box" v-for="item in firstList" :key="item.confId">
+    <div class="data" >
+      <div class="data_box" v-for="(item,index) in firstList" :key="index">
         <div class="book">
           <p>{{item.title}}</p>
           <p>{{item.subTitle}}</p>
         </div>
-        <div class="pic1">
+        <div class="pic1 "> 
           <img :src="item.imgUrl" />
         </div>
       </div>
     </div>
-    <div class="data">
-      <div class="data_box" v-for="item in twoList" :key="item.confId">
+    <div class="data" >
+      <div class="data_box" v-for="(item,index) in twoList" :key="index">
         <div class="book">
           <p>{{item.title}}</p>
           <p>{{item.subTitle}}</p>
@@ -466,7 +467,7 @@
         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAAclBMVEUAAAA2WJk2WJk3WZtEbak2WJk2WZk2WJo3WJo3Wpo4Wps3Wps3W546XaI2WZo3WZo2WJo2WZo5Wps5WZo7W5s9YZ42WZk3WZo2WJo3WZo3WZo2WJk2WJo4Wpo3WZs2WZk3WZo4W5uAgP83WZo4WZk2WJmQgH9YAAAAJXRSTlMA9fBnCN/X6rBWUkIoDujJt5wyLB0VzIXSu6ali3tbUEs5ApBf2p/i4wAAANBJREFUOMvt08kSgjAQBNDMkARiCJss7nv//y+6XBQdLao8cKFPTNc7JExFTRk3IUoM8SK5hJ9Md4S4KNctg7ZahcVRdqlF4U+Pz30Om1aIZJexe047ypwMg+HqdfZMMixx6BcOIqyxeq+WIuww/7ycdOvcqmGJzwNhrf9YqG4Gwk02ENpcKKv44/fM0QlwhuV7tUItQrh+c0CpREjse2dhE2QYGdo9Z8e3Q8vQNy3y/WM4+QI2/bKZpFF6m4HbdVnEoI3+vYv74yKTRI2aMmquGSELMu+krSYAAAAASUVORK5CYII="
             alt="">
     </div>
-    <div class="null"></div>
+    <!-- <div class="null"></div> -->
     <div class="auction">
         <span>新近出版</span>
         <span class="g1">更多></span>
@@ -507,29 +508,26 @@
             </li>
             <li>
                 <div class="i">
-                    <img class="l2"
-                        src="https://booklibimg.kfzimg.com/data/book_lib_img_v2/isbn/1/13d2/13d2a1f0f85158bdffe5e0bb804dd465_0_1_300_300.jpg"
-                        alt="">
+                    <img :src="maxList[2].imgUrl" alt="">
                 </div>
                 <div class="price">
                     <span>￥</span>
-                    <span>30.16</span>
+                    <span>{{maxList[2].price}}</span>
                 </div>
                 <div class="r">
-                    <div class="title">舍斯托夫文集(第7卷)：钥匙的统治</div>
-                    <div class="desc">舍斯托夫 著 / 商务印书馆 / 2019-07 / 精装</div>
+                    <div class="title">{{maxList[2].itemName}}</div>
+                    <div class="desc">{{maxList[2].author}}</div>
                     <div class="author">
-                        《中国家庭基本藏书:按照舍斯托夫的构想，本书原准备写成陀思妥耶夫斯基宗教大法官传说的续篇。在舍斯托夫看来，这一传说是对几
+                        {{maxList[2].contentIntroduction}}
                     </div>
                 </div>
             </li>
         </ul>
     </div>
     <div class="huan">换一换
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAAclBMVEUAAAA2WJk2WJk3WZtEbak2WJk2WZk2WJo3WJo3Wpo4Wps3Wps3W546XaI2WZo3WZo2WJo2WZo5Wps5WZo7W5s9YZ42WZk3WZo2WJo3WZo3WZo2WJk2WJo4Wpo3WZs2WZk3WZo4W5uAgP83WZo4WZk2WJmQgH9YAAAAJXRSTlMA9fBnCN/X6rBWUkIoDujJt5wyLB0VzIXSu6ali3tbUEs5ApBf2p/i4wAAANBJREFUOMvt08kSgjAQBNDMkARiCJss7nv//y+6XBQdLao8cKFPTNc7JExFTRk3IUoM8SK5hJ9Md4S4KNctg7ZahcVRdqlF4U+Pz30Om1aIZJexe047ypwMg+HqdfZMMixx6BcOIqyxeq+WIuww/7ycdOvcqmGJzwNhrf9YqG4Gwk02ENpcKKv44/fM0QlwhuV7tUItQrh+c0CpREjse2dhE2QYGdo9Z8e3Q8vQNy3y/WM4+QI2/bKZpFF6m4HbdVnEoI3+vYv74yKTRI2aMmquGSELMu+krSYAAAAASUVORK5CYII="
-            alt="">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAAclBMVEUAAAA2WJk2WJk3WZtEbak2WJk2WZk2WJo3WJo3Wpo4Wps3Wps3W546XaI2WZo3WZo2WJo2WZo5Wps5WZo7W5s9YZ42WZk3WZo2WJo3WZo3WZo2WJk2WJo4Wpo3WZs2WZk3WZo4W5uAgP83WZo4WZk2WJmQgH9YAAAAJXRSTlMA9fBnCN/X6rBWUkIoDujJt5wyLB0VzIXSu6ali3tbUEs5ApBf2p/i4wAAANBJREFUOMvt08kSgjAQBNDMkARiCJss7nv//y+6XBQdLao8cKFPTNc7JExFTRk3IUoM8SK5hJ9Md4S4KNctg7ZahcVRdqlF4U+Pz30Om1aIZJexe047ypwMg+HqdfZMMixx6BcOIqyxeq+WIuww/7ycdOvcqmGJzwNhrf9YqG4Gwk02ENpcKKv44/fM0QlwhuV7tUItQrh+c0CpREjse2dhE2QYGdo9Z8e3Q8vQNy3y/WM4+QI2/bKZpFF6m4HbdVnEoI3+vYv74yKTRI2aMmquGSELMu+krSYAAAAASUVORK5CYII=" alt="">
     </div>
-    <div class="null"></div>
+    <!-- <div class="null"></div> -->
     <div class="auction">
         <span>销售排行</span>
         <span class="g1">更多></span>
@@ -538,55 +536,49 @@
         <ul class="inner">
             <li>
                 <div class="i">
-                    <img class="l3"
-                        src="https://booklibimg.kfzimg.com/data/book_lib_img_v2/user/1/2223/22231df841f81aa9fe6175e3205fae03_0_1_300_300.jpg"
-                        alt="">
+                      <img :src="xiaoList[0].imgUrl" alt="">
                 </div>
                 <div class="price">
                     <span>￥</span>
-                    <span>45</span>
+                    <span>{{xiaoList[0].price}}</span>
                 </div>
                 <div class="r">
-                    <div class="title">书店日记</div>
-                    <div class="desc">肖恩·白塞尔 著；顾真 译 / 广西师范大学出版社 / 2019-08 / 精装</div>
+                    <div class="title">{{xiaoList[0].itemName}}</div>
+                    <div class="desc">{{xiaoList[0].author}}</div>
                     <div class="author">
-                        美国以自由的代/言/18岁的时候，肖恩?白塞尔第yi次在苏格兰小镇威格敦看到那家名叫“书店”（TheBookShop）的
+                       {{xiaoList[0].contentIntroduction}}
                     </div>
                 </div>
             </li>
             <li>
                 <div class="i">
-                    <img class="l3"
-                        src="https://booklibimg.kfzimg.com/data/book_lib_img_v2/user/1/a65b/a65bb65a88827ab3c6abd4f695e257c5_0_1_300_300.jpg"
-                        alt="">
+                 <img :src="xiaoList[1].imgUrl" alt="">
                 </div>
                 <div class="price">
                     <span>￥</span>
-                    <span>28</span>
+                    <span>{{xiaoList[1].price}}</span>
                 </div>
                 <div class="r">
-                    <div class="title">汗青堂丛书037·海上丝绸之路</div>
-                    <div class="desc">[德]罗德里希·普塔克 著；史敏岳 译 / 中国友谊出版公司 / 2019-10 / 精装</div>
+                    <div class="title">{{xiaoList[1].itemName}}</div>
+                    <div class="desc">{{xiaoList[1].author}}</div>
                     <div class="author">
-                        15世纪初，中国的巨舰曾航行在东南亚和印度洋，其航程远达霍尔木兹、亚丁湾和东非海岸。当郑和于1405
+                        {{xiaoList[1].contentIntroduction}}
                     </div>
                 </div>
             </li>
             <li>
                 <div class="i">
-                    <img class="l3"
-                        src="https://booklibimg.kfzimg.com/data/book_lib_img_v2/isbn/1/f948/f9488e4671da8d195ed289243dae7443_0_1_300_300.jpg"
-                        alt="">
+                    <img :src="xiaoList[2].imgUrl" alt="">
                 </div>
                 <div class="price">
                     <span>￥</span>
-                    <span>28</span>
+                    <span>{{xiaoList[2].price}}</span>
                 </div>
                 <div class="r">
-                    <div class="title">当代中国社会分层</div>
-                    <div class="desc">李强 / 生活·读书·新知三联书店，生活书店出版有限公司 / 2019-06 / 平装</div>
+                    <div class="title">{{xiaoList[2].itemName}}</div>
+                    <div class="desc">{{xiaoList[2].author}}</div>
                     <div class="author">
-                        《中国家庭基本藏书:这是一本基于中国经验和中国研究的社会分层集大成之作，标志着中国社会学社会分层研究的成熟，也是一本教科
+                        {{xiaoList[2].contentIntroduction}}
                     </div>
                 </div>
             </li>
@@ -609,6 +601,8 @@ export default {
       yi:[],
       thindList:[],
       fourList:[],
+      maxList:[],
+      xiaoList:[],
     };
   },
   created() {
@@ -616,32 +610,48 @@ export default {
     this.handleGetThindList(3);
     this.handleGetFourList(4);
     this.handleGetMaxList(4);
+    this.handleGetXiaoList(4);
   },
   methods: {
-    async handleGetFirstList(cityId) {
-      let data = await firstApi(cityId);
-
+    async handleGetFirstList(currPage) {
+      let data = await firstApi(currPage);
+      // this.twoList  ==data.result.list[1].data? data.result.list[1].data:'';
+      // this.firstList == data.result.list[0].data? data.result.list[0].data:'';
       this.firstList = data.result.list[0].data;
       this.twoList = data.result.list[1].data;
-      //console.log(data);
+      // console.log(data);
+      console.log(this.firstList)
     },
-      async handleGetThindList(cityId) {
-       let data = await firstApi(cityId);
-       this.thindList = data.result.list[2].data[0].data;
+      async handleGetThindList(currPage) {
+       let data = await firstApi(currPage);
+         this.thindList = data.result.list[2].data[0].data;
+       this.thindList == data.result.list[2].data[0].data?data.result.list[2].data[0].data:"";
+     
       //  console.log(this.thindList[2]);
      },
-      async handleGetFourList(cityId) {
-       let data = await firstApi(cityId);
-       this.fourList = data.result.list[0].data[0].data;
+      async handleGetFourList(currPage) {
+       let data = await firstApi(currPage);
+        this.fourList = data.result.list[0].data[0].data;
+       this.fourList == data.result.list[0].data[0].data?data.result.list[0].data[0].data:"";
+     
        //console.log( this.fourList[1]);
      },
-      async handleGetMaxList(cityId) {
-       let data = await firstApi(cityId);
+      async handleGetMaxList(currPage) {
+       let data = await firstApi(currPage);
        this.maxList = data.result.list[1].data[0].data;
-       console.log( this.maxList);
+       this.maxList == data.result.list[1].data[0].data?data.result.list[1].data[0].data:"";
+       
+       //console.log( this.maxList);
+     },
+      async handleGetXiaoList(currPage) {
+       let data = await firstApi(currPage);
+       this.xiaoList = data.result.list[2].data[0].data;
+       this.xiaoList == data.result.list[2].data[0].data?data.result.list[2].data[0].data:"";
+       console.log( this.xiaoList);
      },
   }
 };
+
 </script>
 
 <style>
@@ -649,6 +659,7 @@ export default {
 .header {
   height: 100%;
   width: 100%;
+  padding-bottom: .52rem;
 }
 .box {
   height: 0.58rem;
@@ -764,7 +775,7 @@ export default {
 }
 .null {
   width: 100%;
-  min-height: 0.2rem;
+  min-height: 0.53rem;
   border-bottom: 8px solid #f3f3f3;
 }
 .auction {
@@ -1058,13 +1069,13 @@ export default {
 }
 .huan {
   width: 100%;
-  min-height: 1rem;
+  min-height:0.6rem;
   display: flex;
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  /* margin-top: 0.2rem; */
+  border-bottom: 8px solid #f3f3f3;
 }
 .huan img {
   width: 0.2rem;
