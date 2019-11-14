@@ -87,93 +87,513 @@
     <div class="auction">
       <span>拍卖</span>
     </div>
-    <div class="inner">
-      <div class="inner1" v-for="item in pai" :key="item.confid">
-        <div class="book">
-          <p>{{item.title}}</p>
-          <p>{{item.subTitle}}</p>
-          <img :src="item.imgUrl"/>
+     <div class="inner">
+        <div class="inner1">
+            <div class="book">
+                <p>全部拍卖</p>
+                <p>日均4万余件拍品</p>
+                <img src="https://img0.kfzimg.com/operation/a8/ec/a8ec2fa9d76ae778aec20ee04d27bd69.png" alt="">
+            </div>
         </div>
-      </div>
-      <div class="data_box2" v-for="item in yi" :key="item.confid">
-        <div class="book">
-          <p>{{item.title}}</p>
-          <p>{{item.subTitle}}</p>
+        <div class="data_box2">
+            <div class="book">
+                <p>艺术品专场</p>
+                <p>名人字画墨迹等</p>
+            </div>
+            <div class="pic1">
+                <img src="https://img0.kfzimg.com/operation/37/41/37411da7e2306956f34840cb1503894e.png" alt="">
+            </div>
         </div>
-        <div class="pic1">
-          <img :src="item.imgUrl"/>
+        <div class="data_box2">
+            <div class="book">
+                <p>低价拍卖</p>
+                <p>1元起拍捡漏</p>
+            </div>
+            <div class="pic1">
+                <img src="https://img0.kfzimg.com/operation/6a/e3/6ae3e6b33782dfc51821271ac628a3af.png" alt="">
+            </div>
         </div>
-      </div>
-      <div class="data_box2">
-        <div class="book">
-          <p>低价拍卖</p>
-          <p>1元起拍捡漏</p>
-        </div>
-        <div class="pic1">
-          <img
-            src="https://img0.kfzimg.com/operation/6a/e3/6ae3e6b33782dfc51821271ac628a3af.png"
-            alt
-          />
-        </div>
-      </div>
     </div>
     <div class="data">
-      <div class="data_box">
-        <div class="book">
-          <p>珍本拍卖</p>
-          <p>古籍善本</p>
+        <div class="data_box">
+            <div class="book">
+                <p>珍本拍卖</p>
+                <p>古籍善本</p>
+            </div>
+            <div class="pic1">
+                <img src="https://img0.kfzimg.com/operation/4b/e7/4be7d7aabe1d8188411e178c60fb4651.png" alt="">
+            </div>
         </div>
-        <div class="pic1">
-          <img
-            src="https://img0.kfzimg.com/operation/4b/e7/4be7d7aabe1d8188411e178c60fb4651.png"
-            alt
-          />
+        <div class="data_box1">
+            <div class="book">
+                <p>今日热点</p>
+                <p>每日必看</p>
+            </div>
+            <div class="pic1">
+                <img src="https://img0.kfzimg.com/operation/bf/10/bf109d68796166dc526cd72123571f11.png" alt="">
+            </div>
         </div>
-      </div>
-      <div class="data_box1">
-        <div class="book">
-          <p>今日热点</p>
-          <p>每日必看</p>
-        </div>
-        <div class="pic1">
-          <img
-            src="https://img0.kfzimg.com/operation/bf/10/bf109d68796166dc526cd72123571f11.png"
-            alt
-          />
-        </div>
-      </div>
     </div>
     <div class="data">
-      <div class="data_box">
-        <div class="book">
-          <p>大众拍卖</p>
-          <p>大家都在拍</p>
+        <div class="data_box">
+            <div class="book">
+                <p>大众拍卖</p>
+                <p>大家都在拍</p>
+            </div>
+            <div class="pic1">
+                <img src="https://img0.kfzimg.com/operation/2a/f0/2af0cd06e0886d1af2ec3419d468415f.png" alt="">
+            </div>
         </div>
-        <div class="pic1">
-          <img
-            src="https://img0.kfzimg.com/operation/2a/f0/2af0cd06e0886d1af2ec3419d468415f.png"
-            alt
-          />
+        <div class="data_box1">
+            <div class="book">
+                <p>三天热点</p>
+                <p>热拍推荐</p>
+            </div>
+            <div class="pic1">
+                <img src="https://img0.kfzimg.com/operation/7d/ec/7dec8863d15871dfa80e06862635e9fb.png" alt="">
+            </div>
         </div>
-      </div>
-      <div class="data_box1">
-        <div class="book">
-          <p>三天热点</p>
-          <p>热拍推荐</p>
-        </div>
-        <div class="pic1">
-          <img
-            src="https://img0.kfzimg.com/operation/7d/ec/7dec8863d15871dfa80e06862635e9fb.png"
-            alt
-          />
-        </div>
-      </div>
     </div>
     <div class="null"></div>
     <div class="auction">
-      <span>好友推荐</span>
-      <span class="g1">更多></span>
+        <span>好友推荐</span>
+        <span class="g1">更多></span>
     </div>
+    <div class="sev">
+        <div class="sev_ton">
+            <!-- <div class="most"> -->
+            <div class="kuang">
+                <img src="https://booklibimg.kfzimg.com/data/book_lib_img_v2/user/1/5651/56511f5066174806a00d2a77caa5ca4c_0_1_300_300.jpg"
+                    alt="">
+                <div class="title">波斯笔记（精装函套 上下册）</div>
+                <div class="author">李零 著</div>
+                <div class="price">
+                    <span>￥</span>
+                    <span>176</span>
+                    <span>起</span>
+                </div>
+            </div>
+            <div class="kuang">
+                <img src="https://booklibimg.kfzimg.com/data/book_lib_img_v2/user/1/5355/535596875289e883a71e3fe5523241d9_0_1_300_300.jpg"
+                    alt="">
+                <div class="title">克莱因壶</div>
+                <div class="author">[日]冈岛二人 著</div>
+                <div class="price">
+                    <span>￥</span>
+                    <span>20</span>
+                    <span>起</span>
+                </div>
+
+            </div>
+            <div class="kuang">
+                <img src="https://booklibimg.kfzimg.com/data/book_lib_img_v2/user/1/0c00/0c0001d56817378a7a88446d755b7824_0_1_300_300.jpg"
+                    alt="">
+                <div class="title">我们在此相遇</div>
+                <div class="author">约翰·伯格</div>
+                <div class="price">
+                    <span>￥</span>
+                    <span>18</span>
+                    <span>起</span>
+                </div>
+            </div>
+            <div class="kuang">
+                <img src="https://booklibimg.kfzimg.com/data/book_lib_img_v2/user/1/4432/4432c8ac144603ba927f9083952f1afa_0_1_300_300.jpg"
+                    alt="">
+                <div class="title">古籍修复技术</div>
+                <div class="author">童芷珍 著</div>
+                <div class="price">
+                    <span>￥</span>
+                    <span>34</span>
+                    <span>起</span>
+                </div>
+            </div>
+            <div class="kuang">
+                <img src="https://booklibimg.kfzimg.com/data/book_lib_img_v2/user/1/764e/764e6f9e93cee085d7eff7c70fbdc96c_0_1_300_300.jpg"
+                    alt="">
+                <div class="title">大家小书汉魏六朝诗简说（精）</div>
+                <div class="author">王运熙 著</div>
+                <div class="price">
+                    <span>￥</span>
+                    <span>19.5</span>
+                    <span>起</span>
+                </div>
+            </div>
+            <div class="kuang">
+                <img src="https://booklibimg.kfzimg.com/data/book_lib_img_v2/user/1/6dd0/6dd08646dc84ead0bcd2391e27af90f4_0_1_300_300.jpg"
+                    alt="">
+                <div class="title">黄金黑白</div>
+                <div class="author">[英]乔尔·W.芬勒</div>
+                <div class="price">
+                    <span>￥</span>
+                    <span>18</span>
+                    <span>起</span>
+                </div>
+            </div>
+            <div class="kuang">
+                <img src="https://booklibimg.kfzimg.com/data/book_lib_img_v2/user/1/6e38/6e38c62d7c9e0a7bb4a3b0f71834b03c_0_1_300_300.jpg"
+                    alt="">
+                <div class="title">藤泽周平作品：三屋清左卫门残日录</div>
+                <div class="author">[日本]藤泽周平</div>
+                <div class="price">
+                    <span>￥</span>
+                    <span>37</span>
+                    <span>起</span>
+                </div>
+            </div>
+            <div class="kuang">
+                <img src="https://booklibimg.kfzimg.com/data/book_lib_img_v2/user/1/c864/c8642cfaa29cac3c99b863c874c394d5_0_1_300_300.jpg"
+                    alt="">
+                <div class="title">法国知识分子史</div>
+                <div class="author">吕一民；朱晓罕</div>
+                <div class="price">
+                    <span>￥</span>
+                    <span>36</span>
+                    <span>起</span>
+                </div>
+            </div>
+            <div class="kuang">
+                <img src="https://booklibimg.kfzimg.com/data/book_lib_img_v2/user/1/a5be/a5be39b6d6903ab560c2f8d004d5ad87_0_1_300_300.jpg"
+                    alt="">
+                <div class="title">礼拜五或太平洋上的灵薄狱</div>
+                <div class="author">[法]米歇尔·</div>
+                <div class="price">
+                    <span>￥</span>
+                    <span>39</span>
+                    <span>起</span>
+                </div>
+            </div>
+            <div class="kuang">
+                <img src="https://booklibimg.kfzimg.com/data/book_lib_img_v2/user/1/6188/618881748c4e30bde678a06522c8630d_0_1_300_300.jpg"
+                    alt="">
+                <div class="title">伊西斯的面纱</div>
+                <div class="author">[法]皮埃尔·阿多</div>
+                <div class="price">
+                    <span>￥</span>
+                    <span>28</span>
+                    <span>起</span>
+                </div>
+            </div>
+
+            <!-- </div> -->
+        </div>
+    </div>
+    <div class="null"></div>
+    <div class="auction">
+        <span>书单推荐</span>
+        <span class="g1">更多></span>
+    </div>
+    <div class="one">
+        <div class="one_big">
+            <div class="one2">
+                <img src="https://img0.kfzimg.com/operation/64/c6/64c6beec81534d73b4db2ba54918951c.jpg" alt="">
+                <p>红尘影像诗，时代记录者</p>
+            </div>
+            <div class="one2">
+                <img src="https://img0.kfzimg.com/operation/0f/76/0f76d0dee2238a1a7c2cadd660880e0c.jpg" alt="">
+                <p>由法国权威报纸《世纪报》评选</p>
+            </div>
+            <div class="one2">
+                <img src="https://img0.kfzimg.com/operation/b1/6b/b16b883a9a482a01cb7596647848c531.jpg" alt="">
+                <p>好的文学可以照见时代精神</p>
+            </div>
+            <!-- 查看剩余书单 -->
+            <div class="more">
+       
+                <router-link tag="div" to="/booklist" class="book">
+                    <p>查看全部</p>
+                    <p>127个书单</p>
+              </router-link>
+            </div>
+        </div>
+    </div>
+    <div class="null"></div>
+    <div class="auction">
+        <span>新书广场</span>
+        <span class="g1">更多></span>
+    </div>
+    <div class="newSquareBox_list">
+        <ul class="inner">
+            <li>
+                <div class="i">
+                    <img :src="thindList[0].imgUrl" alt="">
+                </div>
+                <div class="price">
+                    <span>￥</span>
+                    <span>{{thindList[0].price}}</span>
+                </div>
+                <div class="r">
+                    <div class="title">{{thindList[0].itemName}}</div>
+                    <div class="desc">{{thindList[0].importantDesc}}</div>
+                    <div class="sign_box">
+                        <span>{{thindList[0].tags[0]}}
+                            <div class="jiao">
+                                <div class="jiao_inner"></div>
+                            </div>
+                        </span>
+                        <span>{{thindList[0].tags[1]}}
+                            <div class="jiao">
+                                <div class="jiao_inner"></div>
+                            </div>
+                        </span>
+                        <span>{{thindList[0].tags[2]}}
+                            <div class="jiao">
+                                <div class="jiao_inner"></div>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="i">
+                    <img :src="this.thindList[1].imgUrl" alt="">
+                </div>
+                <div class="price">
+                    <span>￥</span>
+                    <span>{{thindList[1].price}}</span>
+                </div>
+                <div class="r">
+                    <div class="title">{{this.thindList[1].itemName}}</div>
+                    <div class="desc">{{this.thindList[1].importantDesc}}</div>
+                    <div class="sign_box">
+                        <span>藏书票
+                            <div class="jiao">
+                                <div class="jiao_inner"></div>
+                            </div>
+                        </span>
+                        <span>函套
+                            <div class="jiao">
+                                <div class="jiao_inner"></div>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="i">
+                    <img :src="this.thindList[2].imgUrl" alt="">
+                </div>
+                <div class="price">
+                    <span>￥</span>
+                    <span>{{this.thindList[2].price}}</span>
+                </div>
+                <div class="r">
+                    <div class="title">{{this.thindList[2].itemName}}</div>
+                    <div class="desc">{{this.thindList[2].importantDesc}}</div>
+                    <div class="sign_box">
+                        <span>钤印
+                            <div class="jiao">
+                                <div class="jiao_inner"></div>
+                            </div>
+                        </span>
+                        <span>函套
+                            <div class="jiao">
+                                <div class="jiao_inner"></div>
+                            </div>
+                        </span>
+                        <span>赠品
+                            <div class="jiao">
+                                <div class="jiao_inner"></div>
+                            </div>
+                        </span>
+                        <span>特装
+                            <div class="jiao">
+                                <div class="jiao_inner"></div>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="null"></div>
+    <div class="auction">
+        <span>国学经典</span>
+        <span class="g1">更多></span>
+    </div>
+    <div class="newSquareBox_list">
+        <ul class="inner">
+            <li>
+                <div class="i">
+                    <img :src="fourList[0].imgUrl" alt="">
+                </div>
+                <div class="price">
+                    <span>￥</span>
+                    <span>{{fourList[0].price}}</span>
+                </div>
+                <div class="r">
+                    <div class="title">{{fourList[0].itemName}}</div>
+                    <div class="desc">{{fourList[0].author}}</div>
+                    <div class="author">
+                        {{fourList[0].contentIntroduction}}
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="i">
+                    <img :src="fourList[1].imgUrl" alt="">
+                </div>
+                <div class="price">
+                    <span>￥</span>
+                    <span>{{fourList[1].price}}</span>
+                </div>
+                <div class="r">
+                    <div class="title">{{fourList[1].itemName}}</div>
+                    <div class="desc">{{fourList[1].author}}</div>
+                    <div class="author">
+                        {{fourList[1].contentIntroduction}}
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="i">
+                    <img :src="fourList[2].imgUrl" alt="">
+                </div>
+                <div class="price">
+                    <span>￥</span>
+                    <span>{{fourList[2].price}}</span>
+                </div>
+                <div class="r">
+                    <div class="title">{{fourList[2].itemName}}</div>
+                    <div class="desc">{{fourList[2].author}}</div>
+                    <div class="author">
+                        {{fourList[2].contentIntroduction}}
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="huan">换一换
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAAclBMVEUAAAA2WJk2WJk3WZtEbak2WJk2WZk2WJo3WJo3Wpo4Wps3Wps3W546XaI2WZo3WZo2WJo2WZo5Wps5WZo7W5s9YZ42WZk3WZo2WJo3WZo3WZo2WJk2WJo4Wpo3WZs2WZk3WZo4W5uAgP83WZo4WZk2WJmQgH9YAAAAJXRSTlMA9fBnCN/X6rBWUkIoDujJt5wyLB0VzIXSu6ali3tbUEs5ApBf2p/i4wAAANBJREFUOMvt08kSgjAQBNDMkARiCJss7nv//y+6XBQdLao8cKFPTNc7JExFTRk3IUoM8SK5hJ9Md4S4KNctg7ZahcVRdqlF4U+Pz30Om1aIZJexe047ypwMg+HqdfZMMixx6BcOIqyxeq+WIuww/7ycdOvcqmGJzwNhrf9YqG4Gwk02ENpcKKv44/fM0QlwhuV7tUItQrh+c0CpREjse2dhE2QYGdo9Z8e3Q8vQNy3y/WM4+QI2/bKZpFF6m4HbdVnEoI3+vYv74yKTRI2aMmquGSELMu+krSYAAAAASUVORK5CYII="
+            alt="">
+    </div>
+    <div class="null"></div>
+    <div class="auction">
+        <span>新近出版</span>
+        <span class="g1">更多></span>
+    </div>
+    <div class="newSquareBox_list">
+        <ul class="inner">
+            <li>
+                <div class="i">
+                    <img :src="maxList[0].imgUrl" alt="">
+                </div>
+                <div class="price">
+                    <span>￥</span>
+                    <span>{{maxList[0].price}}</span>
+                </div>
+                <div class="r">
+                    <div class="title">{{maxList[0].itemName}}</div>
+                    <div class="desc">{{maxList[0].author}}</div>
+                    <div class="author">
+                        {{maxList[0].contentIntroduction}}
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="i">
+                    <img :src="maxList[1].imgUrl" alt="">
+                </div>
+                <div class="price">
+                    <span>￥</span>
+                    <span>{{maxList[1].price}}</span>
+                </div>
+                <div class="r">
+                    <div class="title">{{maxList[1].itemName}}</div>
+                    <div class="desc">{{maxList[1].author}}</div>
+                    <div class="author">
+                        {{maxList[1].contentIntroduction}}
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="i">
+                    <img class="l2"
+                        src="https://booklibimg.kfzimg.com/data/book_lib_img_v2/isbn/1/13d2/13d2a1f0f85158bdffe5e0bb804dd465_0_1_300_300.jpg"
+                        alt="">
+                </div>
+                <div class="price">
+                    <span>￥</span>
+                    <span>30.16</span>
+                </div>
+                <div class="r">
+                    <div class="title">舍斯托夫文集(第7卷)：钥匙的统治</div>
+                    <div class="desc">舍斯托夫 著 / 商务印书馆 / 2019-07 / 精装</div>
+                    <div class="author">
+                        《中国家庭基本藏书:按照舍斯托夫的构想，本书原准备写成陀思妥耶夫斯基宗教大法官传说的续篇。在舍斯托夫看来，这一传说是对几
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="huan">换一换
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAAclBMVEUAAAA2WJk2WJk3WZtEbak2WJk2WZk2WJo3WJo3Wpo4Wps3Wps3W546XaI2WZo3WZo2WJo2WZo5Wps5WZo7W5s9YZ42WZk3WZo2WJo3WZo3WZo2WJk2WJo4Wpo3WZs2WZk3WZo4W5uAgP83WZo4WZk2WJmQgH9YAAAAJXRSTlMA9fBnCN/X6rBWUkIoDujJt5wyLB0VzIXSu6ali3tbUEs5ApBf2p/i4wAAANBJREFUOMvt08kSgjAQBNDMkARiCJss7nv//y+6XBQdLao8cKFPTNc7JExFTRk3IUoM8SK5hJ9Md4S4KNctg7ZahcVRdqlF4U+Pz30Om1aIZJexe047ypwMg+HqdfZMMixx6BcOIqyxeq+WIuww/7ycdOvcqmGJzwNhrf9YqG4Gwk02ENpcKKv44/fM0QlwhuV7tUItQrh+c0CpREjse2dhE2QYGdo9Z8e3Q8vQNy3y/WM4+QI2/bKZpFF6m4HbdVnEoI3+vYv74yKTRI2aMmquGSELMu+krSYAAAAASUVORK5CYII="
+            alt="">
+    </div>
+    <div class="null"></div>
+    <div class="auction">
+        <span>销售排行</span>
+        <span class="g1">更多></span>
+    </div>
+    <div class="newSquareBox_list">
+        <ul class="inner">
+            <li>
+                <div class="i">
+                    <img class="l3"
+                        src="https://booklibimg.kfzimg.com/data/book_lib_img_v2/user/1/2223/22231df841f81aa9fe6175e3205fae03_0_1_300_300.jpg"
+                        alt="">
+                </div>
+                <div class="price">
+                    <span>￥</span>
+                    <span>45</span>
+                </div>
+                <div class="r">
+                    <div class="title">书店日记</div>
+                    <div class="desc">肖恩·白塞尔 著；顾真 译 / 广西师范大学出版社 / 2019-08 / 精装</div>
+                    <div class="author">
+                        美国以自由的代/言/18岁的时候，肖恩?白塞尔第yi次在苏格兰小镇威格敦看到那家名叫“书店”（TheBookShop）的
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="i">
+                    <img class="l3"
+                        src="https://booklibimg.kfzimg.com/data/book_lib_img_v2/user/1/a65b/a65bb65a88827ab3c6abd4f695e257c5_0_1_300_300.jpg"
+                        alt="">
+                </div>
+                <div class="price">
+                    <span>￥</span>
+                    <span>28</span>
+                </div>
+                <div class="r">
+                    <div class="title">汗青堂丛书037·海上丝绸之路</div>
+                    <div class="desc">[德]罗德里希·普塔克 著；史敏岳 译 / 中国友谊出版公司 / 2019-10 / 精装</div>
+                    <div class="author">
+                        15世纪初，中国的巨舰曾航行在东南亚和印度洋，其航程远达霍尔木兹、亚丁湾和东非海岸。当郑和于1405
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="i">
+                    <img class="l3"
+                        src="https://booklibimg.kfzimg.com/data/book_lib_img_v2/isbn/1/f948/f9488e4671da8d195ed289243dae7443_0_1_300_300.jpg"
+                        alt="">
+                </div>
+                <div class="price">
+                    <span>￥</span>
+                    <span>28</span>
+                </div>
+                <div class="r">
+                    <div class="title">当代中国社会分层</div>
+                    <div class="desc">李强 / 生活·读书·新知三联书店，生活书店出版有限公司 / 2019-06 / 平装</div>
+                    <div class="author">
+                        《中国家庭基本藏书:这是一本基于中国经验和中国研究的社会分层集大成之作，标志着中国社会学社会分层研究的成熟，也是一本教科
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="huan">--没有更多--</div>
+    <div class="null"></div>
   </div>
 </template>
 
@@ -186,12 +606,16 @@ export default {
       firstList: [],
       twoList: [],
       pai: [],
-      yi:[]
+      yi:[],
+      thindList:[],
+      fourList:[],
     };
   },
   created() {
     this.handleGetFirstList(1);
-    this.handleGetsecondList(2);
+    this.handleGetThindList(3);
+    this.handleGetFourList(4);
+    this.handleGetMaxList(4);
   },
   methods: {
     async handleGetFirstList(cityId) {
@@ -199,19 +623,23 @@ export default {
 
       this.firstList = data.result.list[0].data;
       this.twoList = data.result.list[1].data;
-      this.pai = data.result.list[2].data;
-      this.pai = data.result.list[2].data;
-      console.log(data);
+      //console.log(data);
     },
-    
-    async handleGetsecondList(cityId) {
-      let data = await firstApi(cityId);
-     console.log(data)
-      // this.yi = data.result.list[0].data;
-      //  this.yi=data.result.list[1].data;
-      //  this.pai=data.result.list[2].data;
-      // console.log(data);
-    }
+      async handleGetThindList(cityId) {
+       let data = await firstApi(cityId);
+       this.thindList = data.result.list[2].data[0].data;
+      //  console.log(this.thindList[2]);
+     },
+      async handleGetFourList(cityId) {
+       let data = await firstApi(cityId);
+       this.fourList = data.result.list[0].data[0].data;
+       //console.log( this.fourList[1]);
+     },
+      async handleGetMaxList(cityId) {
+       let data = await firstApi(cityId);
+       this.maxList = data.result.list[1].data[0].data;
+       console.log( this.maxList);
+     },
   }
 };
 </script>
@@ -228,8 +656,8 @@ export default {
 .box img {
   width: 0.34rem;
   height: 0.34rem;
-  margin-left: 0.12rem;
   margin-top: 0.12rem;
+  margin-left:0.2rem;
   float: left;
 }
 .find {
@@ -256,7 +684,7 @@ export default {
   width: 0.16rem;
   height: 0.16rem;
   top: 0;
-  left: 0.04rem;
+  left:0;
 }
 /* 是轮播图啊 */
 .pic {
@@ -394,6 +822,9 @@ export default {
   overflow-x: auto;
   display: flex;
 }
+.sev_ton::-webkit-scrollbar {
+    display:none;
+ }
 .kuang {
   width: 1rem;
   height: 2.12rem;
@@ -452,7 +883,7 @@ export default {
 }
 .one .one_big .one2 {
   width: 3.45rem;
-  height: 2.04rem;
+  height: 2.02rem;
   margin-left: 0.15rem;
   border: 1px solid #ccc;
 }
@@ -518,12 +949,12 @@ export default {
 }
 .newSquareBox_list .inner li .i img {
   width: 1rem;
-  height: 0.67rem;
-  padding-top: 0.33rem;
+  /* height: 0.67rem; */
+  padding-top: 0.15rem;
 }
 .newSquareBox_list .inner li .i .l1 {
   width: 1rem;
-  height: 1.26rem;
+  height: 1.2rem;
 }
 .newSquareBox_list .inner li .i .l2 {
   width: 1rem;
@@ -627,19 +1058,13 @@ export default {
 }
 .huan {
   width: 100%;
-  min-height: 0.55rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  min-height: 1rem;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  /* height: .2rem; */
-  /* line-height: .2rem; */
-  margin-top: 0.2rem;
+  /* margin-top: 0.2rem; */
 }
 .huan img {
   width: 0.2rem;

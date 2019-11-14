@@ -7,6 +7,7 @@ import bookshop from "./bookshop"
 import sell from "./sell"
 import cart from "./cart"
 import search from "./search"
+import booklist from "./booklist"
 
 const router = new VueRouter({
     mode: "hash",
@@ -20,6 +21,7 @@ const router = new VueRouter({
         sell,
         cart,
         search,
+        booklist,
         {
             path: "/mine",
             name: "mine",
@@ -41,6 +43,14 @@ const router = new VueRouter({
             path: "/search",
             name: "search",
             component: _ => import("../pages/search"),
+            meta: {
+                flag: false
+            },
+        },
+        {
+            path: "/booklist",
+            name: "booklist",
+            component: _ => import("../pages/booklist"),
             meta: {
                 flag: false
             },

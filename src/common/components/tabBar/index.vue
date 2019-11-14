@@ -54,19 +54,22 @@ export default {
 <style>
 /* ///////////底部 */
 #footer {
-  width:100%;
-  height:0.5rem;
+  width:3.75rem;
+  height:0.52rem;
   position:fixed;
   bottom:0;
   left:0;
   background:#fff;
+   margin-top:0.25rem;
+    overflow: hidden;
 }
 #footer .inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 3.75rem;
   height: 0.5rem;
+  overflow: hidden;
 }
 #footer .inner li {
   width:0.75rem;
