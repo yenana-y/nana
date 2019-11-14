@@ -8,6 +8,6 @@
     vue-lazyload
     better-scroll
 
-#环境配置
+#环境配置12
 vue-cli@3
 vue-config.js
