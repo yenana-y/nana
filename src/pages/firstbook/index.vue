@@ -508,16 +508,16 @@
             </li>
             <li>
                 <div class="i">
-                    <img :src="maxList[2].imgUrl" alt="">
+                    <img :src="maxList[2]&&maxList[2].imgUrl" alt="">
                 </div>
                 <div class="price">
                     <span>￥</span>
-                    <span>{{maxList[2].price}}</span>
+                    <span v-if="maxList[2]">{{maxList[2].price}}</span>
                 </div>
                 <div class="r">
-                    <div class="title">{{maxList[2].itemName}}</div>
-                    <div class="desc">{{maxList[2].author}}</div>
-                    <div class="author">
+                    <div class="title" v-if="maxList[2]">{{maxList[2].itemName}}</div>
+                    <div class="desc" v-if="maxList[2]">{{maxList[2].author}}</div>
+                    <div class="author" v-if="maxList[2]">
                         {{maxList[2].contentIntroduction}}
                     </div>
                 </div>
@@ -536,48 +536,48 @@
         <ul class="inner">
             <li>
                 <div class="i">
-                      <img :src="xiaoList[0].imgUrl" alt="">
+                      <img :src="xiaoList[0]&&xiaoList[0].imgUrl" alt="">
                 </div>
                 <div class="price">
                     <span>￥</span>
-                    <span>{{xiaoList[0].price}}</span>
+                    <span v-if="xiaoList[0]">{{xiaoList[0].price}}</span>
                 </div>
                 <div class="r">
-                    <div class="title">{{xiaoList[0].itemName}}</div>
-                    <div class="desc">{{xiaoList[0].author}}</div>
-                    <div class="author">
+                    <div class="title" v-if="xiaoList[0]">{{xiaoList[0].itemName}}</div>
+                    <div class="desc" v-if="xiaoList[0]">{{xiaoList[0].author}}</div>
+                    <div class="author" v-if="xiaoList[0]">
                        {{xiaoList[0].contentIntroduction}}
                     </div>
                 </div>
             </li>
             <li>
                 <div class="i">
-                 <img :src="xiaoList[1].imgUrl" alt="">
+                 <img :src="xiaoList[1]&&xiaoList[1].imgUrl" alt="">
                 </div>
                 <div class="price">
                     <span>￥</span>
-                    <span>{{xiaoList[1].price}}</span>
+                    <span v-if="xiaoList[1]">{{xiaoList[1].price}}</span>
                 </div>
                 <div class="r">
-                    <div class="title">{{xiaoList[1].itemName}}</div>
-                    <div class="desc">{{xiaoList[1].author}}</div>
-                    <div class="author">
+                    <div class="title" v-if="xiaoList[1]">{{xiaoList[1].itemName}}</div>
+                    <div class="desc" v-if="xiaoList[1]">{{xiaoList[1].author}}</div>
+                    <div class="author" v-if="xiaoList[1]">
                         {{xiaoList[1].contentIntroduction}}
                     </div>
                 </div>
             </li>
             <li>
                 <div class="i">
-                    <img :src="xiaoList[2].imgUrl" alt="">
+                    <img :src="xiaoList[2]&&xiaoList[2].imgUrl" alt="">
                 </div>
                 <div class="price">
                     <span>￥</span>
-                    <span>{{xiaoList[2].price}}</span>
+                    <span v-if="xiaoList[2]">{{xiaoList[2].price}}</span>
                 </div>
                 <div class="r">
-                    <div class="title">{{xiaoList[2].itemName}}</div>
-                    <div class="desc">{{xiaoList[2].author}}</div>
-                    <div class="author">
+                    <div class="title" v-if="xiaoList[2]">{{xiaoList[2].itemName}}</div>
+                    <div class="desc" v-if="xiaoList[2]">{{xiaoList[2].author}}</div>
+                    <div class="author" v-if="xiaoList[2]">
                         {{xiaoList[2].contentIntroduction}}
                     </div>
                 </div>
@@ -601,7 +601,8 @@ export default {
       yi:[],
       thindList:[],
       fourList:[],
-      maxList:[]
+      maxList:[],
+      xiaoList:[]
     };
   },
   created() {
