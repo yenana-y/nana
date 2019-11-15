@@ -6,7 +6,11 @@ module.exports={
           "/operation":{
               target:"https://m.kongfz.com",
               changeOrigin:true
-          } 
+          },
+          "/api-search":{
+            target:"https://m.kongfz.com",
+            changeOrigin:true
+        },
        } 
     },
     ///别名配置

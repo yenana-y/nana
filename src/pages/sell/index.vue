@@ -119,7 +119,7 @@ export default {
 };
 </script>
     
-<style>
+<style scoped>
 .sell {
   width: 100%;
   height: 100%;

@@ -1,9 +1,12 @@
 <template>
   <div class="listbook">
          <div class="header">
-        <span class="back-icon"></span>
+             <div class="booksheader">
+                 <span class="back-icon" v-on:click="back"></span>
         <span class="header-title">书单</span>
         <span class="more-icon"></span>
+             </div>
+        
     </div>
     <div class="bigBox">
         <div class="box">
@@ -177,10 +180,17 @@
 </template>
 
 <script>
-export default {};
+export default {
+    name:"Booklist",
+    methods:{
+        back(){
+        this.$router.go(-1);//返回上一层
+    },
+    }
+};
 </script>
 
-<style>
+<style scoped>
 .booklist{
   width:100%;
   height:100%;
@@ -194,7 +204,17 @@ export default {};
   bottom: 0;
   right: 0;
   background: #fff;
+  position:fixed;
+    top:0;
+    left:0;
 }
+/* .booksheader{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+} */
 .header .back-icon {
   display: inline-block;
   width: 0.28rem;

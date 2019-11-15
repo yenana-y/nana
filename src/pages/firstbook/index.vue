@@ -1,6 +1,7 @@
 <template>
   <!-- 这是头部哦  -->
-  <div class="header">
+  <div class="header" ref="firstBody">
+    <div class="scroll_content">
     <div class="box">
       <img
         src="data:
@@ -314,7 +315,7 @@
     </div>
     <div class="newSquareBox_list">
         <ul class="inner">
-            <li>
+            <router-link v-if="thindList[0]" tag="li" :to="{name:'detail',params:{id:thindList[0].itemId,name:thindList[0].shopName,price:thindList[0].price,img:thindList[0].imgUrl,auto:thindList[0].itemName,content:thindList[0].importantDesc}}">
                 <div class="i">
                     <img :src="thindList[0]&&thindList[0].imgUrl" alt="">
                 </div>
@@ -343,8 +344,8 @@
                         </span>
                     </div>
                 </div>
-            </li>
-            <li>
+            </router-link>
+            <router-link v-if="thindList[1]" tag="li" :to="{name:'detail',params:{id:thindList[1].itemId,name:thindList[1].shopName,price:thindList[1].price,img:thindList[1].imgUrl,auto:thindList[1].itemName,content:thindList[1].importantDesc}}">
                 <div class="i">
                     <img :src="thindList[1]&&this.thindList[1].imgUrl" alt="">
                 </div>
@@ -368,8 +369,8 @@
                         </span>
                     </div>
                 </div>
-            </li>
-            <li>
+            </router-link>
+            <router-link v-if="thindList[2]" tag="li" :to="{name:'detail',params:{id:thindList[2].itemId,name:thindList[2].shopName,price:thindList[2].price,img:thindList[2].imgUrl,auto:thindList[2].itemName,content:thindList[2].importantDesc}}">
                 <div class="i">
                     <img :src="thindList[2]&&this.thindList[2].imgUrl" alt="">
                 </div>
@@ -403,7 +404,7 @@
                         </span>
                     </div>
                 </div>
-            </li>
+            </router-link>
         </ul>
     </div>
     <div class="null"></div>
@@ -413,7 +414,7 @@
     </div>
     <div class="newSquareBox_list">
         <ul class="inner">
-            <li>
+            <router-link v-if="fourList[0]" tag="li" :to="{name:'detail',params:{id:fourList[0].mid,name:fourList[0].itemName,price:fourList[0].price,img:fourList[0].imgUrl,auto:fourList[0].author,content:fourList[0].contentIntroduction}}">
                 <div class="i">
                     <img :src="fourList[0]&&fourList[0].imgUrl" alt="">
                 </div>
@@ -428,8 +429,8 @@
                         {{fourList[0].contentIntroduction}}
                     </div>
                 </div>
-            </li>
-            <li>
+            </router-link>
+            <router-link v-if="fourList[1]" tag="li" :to="{name:'detail',params:{id:fourList[1].mid,name:fourList[1].itemName,price:fourList[1].price,img:fourList[1].imgUrl,auto:fourList[1].author,content:fourList[1].contentIntroduction}}">
                 <div class="i">
                     <img :src="fourList[1]&&fourList[1].imgUrl" alt="">
                 </div>
@@ -444,8 +445,8 @@
                         {{fourList[1].contentIntroduction}}
                     </div>
                 </div>
-            </li>
-            <li>
+            </router-link>
+            <router-link v-if="fourList[2]" tag="li" :to="{name:'detail',params:{id:fourList[2].mid,name:fourList[2].itemName,price:fourList[2].price,img:fourList[2].imgUrl,auto:fourList[2].author,content:fourList[2].contentIntroduction}}">
                 <div class="i">
                     <img :src="fourList[2]&&fourList[2].imgUrl" alt="">
                 </div>
@@ -460,7 +461,7 @@
                         {{fourList[2].contentIntroduction}}
                     </div>
                 </div>
-            </li>
+            </router-link>
         </ul>
     </div>
     <div class="huan">换一换
@@ -474,7 +475,7 @@
     </div>
     <div class="newSquareBox_list">
         <ul class="inner">
-            <li>
+            <router-link v-if="maxList[0]" tag="li" :to="{name:'detail',params:{id:maxList[0].mid,name:maxList[0].itemName,price:maxList[0].price,img:maxList[0].imgUrl,auto:maxList[0].author,content:maxList[0].contentIntroduction}}">
                 <div class="i">
                     <img :src="maxList[0]&&maxList[0].imgUrl" alt="">
                 </div>
@@ -489,8 +490,8 @@
                         {{maxList[0].contentIntroduction}}
                     </div>
                 </div>
-            </li>
-            <li>
+            </router-link>
+            <router-link v-if="maxList[1]" tag="li" :to="{name:'detail',params:{id:maxList[1].mid,name:maxList[1].itemName,price:maxList[1].price,img:maxList[1].imgUrl,auto:maxList[1].author,content:maxList[1].contentIntroduction}}">
                 <div class="i">
                     <img :src="maxList[1]&&maxList[1].imgUrl" alt="">
                 </div>
@@ -505,8 +506,8 @@
                         {{maxList[1].contentIntroduction}}
                     </div>
                 </div>
-            </li>
-            <li>
+            </router-link>
+            <router-link v-if="maxList[2]" tag="li" :to="{name:'detail',params:{id:maxList[2].mid,name:maxList[2].itemName,price:maxList[2].price,img:maxList[2].imgUrl,auto:maxList[2].author,content:maxList[2].contentIntroduction}}">
                 <div class="i">
                     <img :src="maxList[2]&&maxList[2].imgUrl" alt="">
                 </div>
@@ -521,7 +522,7 @@
                         {{maxList[2].contentIntroduction}}
                     </div>
                 </div>
-            </li>
+            </router-link>
         </ul>
     </div>
     <div class="huan">换一换
@@ -534,7 +535,7 @@
     </div>
     <div class="newSquareBox_list">
         <ul class="inner">
-            <li>
+            <router-link v-if="xiaoList[0]" tag="li" :to="{name:'detail',params:{id:xiaoList[0].mid,name:xiaoList[0].itemName,price:xiaoList[0].price,img:xiaoList[0].imgUrl,auto:xiaoList[0].author,content:xiaoList[0].contentIntroduction}}">
                 <div class="i">
                       <img :src="xiaoList[0]&&xiaoList[0].imgUrl" alt="">
                 </div>
@@ -549,8 +550,9 @@
                        {{xiaoList[0].contentIntroduction}}
                     </div>
                 </div>
-            </li>
-            <li>
+            </router-link>
+
+            <router-link  v-if="xiaoList[1]" tag="li" :to="{name:'detail',params:{id:xiaoList[1].mid,name:xiaoList[1].itemName,price:xiaoList[1].price,img:xiaoList[1].imgUrl,auto:xiaoList[1].author,content:xiaoList[1].contentIntroduction}}">
                 <div class="i">
                  <img :src="xiaoList[1]&&xiaoList[1].imgUrl" alt="">
                 </div>
@@ -565,8 +567,8 @@
                         {{xiaoList[1].contentIntroduction}}
                     </div>
                 </div>
-            </li>
-            <li>
+            </router-link>
+            <router-link  v-if="xiaoList[2]" tag="li" :to="{name:'detail',params:{id:xiaoList[2].mid,name:xiaoList[2].itemName,price:xiaoList[2].price,img:xiaoList[2].imgUrl,auto:xiaoList[2].author,content:xiaoList[2].contentIntroduction}}">
                 <div class="i">
                     <img :src="xiaoList[2]&&xiaoList[2].imgUrl" alt="">
                 </div>
@@ -581,15 +583,17 @@
                         {{xiaoList[2].contentIntroduction}}
                     </div>
                 </div>
-            </li>
+            </router-link>
         </ul>
     </div>
-    <div class="huan">--没有更多--</div>
+    <div class="huan" >--没有更多--</div>
     <div class="null"></div>
+    </div>
   </div>
 </template>
 
 <script>
+
 import { firstApi } from "../../api/firstbook";
 export default {
   name: "Firstbook",
@@ -602,7 +606,8 @@ export default {
       thindList:[],
       fourList:[],
       maxList:[],
-      xiaoList:[]
+      xiaoList:[],
+      checked: true
     };
   },
   created() {
@@ -612,6 +617,7 @@ export default {
     this.handleGetMaxList(4);
     this.handleGetXiaoList(4);
   },
+
   methods: {
     async handleGetFirstList(cityId) {
       let data = await firstApi(cityId);
@@ -619,13 +625,13 @@ export default {
       this.twoList = data.result.list[1].data;
       this.firstList == data.result.list[0].data?data.result.list[0].data:"";
       this.twoList == data.result.list[1].data?data.result.list[1].data:"";
-      console.log(this.firstList);
+      //console.log(this.firstList);
     },
       async handleGetThindList(cityId) {
        let data = await firstApi(cityId);
        this.thindList = data.result.list[2].data[0].data;
        this.thindList == data.result.list[2].data[0].data?data.result.list[2].data[0].data:"";
-      //  console.log(this.thindList[2]);
+        //console.log(this.thindList);
      },
       async handleGetFourList(cityId) {
        let data = await firstApi(cityId);
@@ -644,14 +650,14 @@ export default {
        let data = await firstApi(currPage);
        this.xiaoList = data.result.list[2].data[0].data;
        this.xiaoList == data.result.list[2].data[0].data?data.result.list[2].data[0].data:"";
-       console.log( this.xiaoList);
+       //console.log( this.xiaoList);
      },
   }
 };
 
 </script>
 
-<style>
+<style scoped>
 /* 这是头部哦 */
 .header {
   height: 100%;
