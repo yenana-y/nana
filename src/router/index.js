@@ -39,22 +39,6 @@ const router = new VueRouter({
                 flag: false
             },
         },
-        {
-            path: "/search",
-            name: "search",
-            component: _ => import("../pages/search"),
-            meta: {
-                flag: false
-            },
-        },
-        {
-            path: "/booklist",
-            name: "booklist",
-            component: _ => import("../pages/booklist"),
-            meta: {
-                flag: false
-            },
-        }
 
 
     ]

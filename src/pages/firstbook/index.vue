@@ -22,7 +22,7 @@
     <div class="nav">
       <ul>
         <!-- <router-link
-        tag="li" to="/search">-->
+        tag="li" to="/search"> -->
         <li>
           <img
             src="https://img0.kfzimg.com/operation/7e/67/7e67ee755c4751b08ca2cf4f6c167b5a.png"
@@ -315,27 +315,27 @@
         <ul class="inner">
             <li>
                 <div class="i">
-                    <img :src="thindList[0].imgUrl" alt="">
+                    <img :src="thindList[0]&&thindList[0].imgUrl" alt="">
                 </div>
                 <div class="price">
                     <span>￥</span>
-                    <span>{{thindList[0].price}}</span>
+                    <span v-if="thindList[0]">{{thindList[0].price}}</span>
                 </div>
                 <div class="r">
-                    <div class="title">{{thindList[0].itemName}}</div>
-                    <div class="desc">{{thindList[0].importantDesc}}</div>
+                    <div class="title" v-if="thindList[0]">{{thindList[0].itemName}}</div>
+                    <div class="desc" v-if="thindList[0]">{{thindList[0].importantDesc}}</div>
                     <div class="sign_box">
-                        <span>{{thindList[0].tags[0]}}
+                        <span v-if="thindList[0]">{{thindList[0].tags[0]}}
                             <div class="jiao">
                                 <div class="jiao_inner"></div>
                             </div>
                         </span>
-                        <span>{{thindList[0].tags[1]}}
+                        <span v-if="thindList[0]">{{thindList[0].tags[1]}}
                             <div class="jiao">
                                 <div class="jiao_inner"></div>
                             </div>
                         </span>
-                        <span>{{thindList[0].tags[2]}}
+                        <span v-if="thindList[0]">{{thindList[0].tags[2]}}
                             <div class="jiao">
                                 <div class="jiao_inner"></div>
                             </div>
@@ -345,15 +345,15 @@
             </li>
             <li>
                 <div class="i">
-                    <img :src="this.thindList[1].imgUrl" alt="">
+                    <img :src="thindList[1]&&this.thindList[1].imgUrl" alt="">
                 </div>
                 <div class="price">
                     <span>￥</span>
-                    <span>{{thindList[1].price}}</span>
+                    <span v-if="thindList[1]">{{thindList[1].price}}</span>
                 </div>
                 <div class="r">
-                    <div class="title">{{this.thindList[1].itemName}}</div>
-                    <div class="desc">{{this.thindList[1].importantDesc}}</div>
+                    <div class="title" v-if="thindList[1]">{{this.thindList[1].itemName}}</div>
+                    <div class="desc" v-if="thindList[1]">{{this.thindList[1].importantDesc}}</div>
                     <div class="sign_box">
                         <span>藏书票
                             <div class="jiao">
@@ -370,15 +370,15 @@
             </li>
             <li>
                 <div class="i">
-                    <img :src="this.thindList[2].imgUrl" alt="">
+                    <img :src="thindList[2]&&this.thindList[2].imgUrl" alt="">
                 </div>
                 <div class="price">
                     <span>￥</span>
-                    <span>{{this.thindList[2].price}}</span>
+                    <span v-if="thindList[2]">{{this.thindList[2].price}}</span>
                 </div>
                 <div class="r">
-                    <div class="title">{{this.thindList[2].itemName}}</div>
-                    <div class="desc">{{this.thindList[2].importantDesc}}</div>
+                    <div class="title" v-if="thindList[2]">{{this.thindList[2].itemName}}</div>
+                    <div class="desc" v-if="thindList[2]">{{this.thindList[2].importantDesc}}</div>
                     <div class="sign_box">
                         <span>钤印
                             <div class="jiao">
@@ -414,48 +414,48 @@
         <ul class="inner">
             <li>
                 <div class="i">
-                    <img :src="fourList[0].imgUrl" alt="">
+                    <img :src="fourList[0]&&fourList[0].imgUrl" alt="">
                 </div>
                 <div class="price">
                     <span>￥</span>
-                    <span>{{fourList[0].price}}</span>
+                    <span v-if="fourList[0]">{{fourList[0].price}}</span>
                 </div>
                 <div class="r">
-                    <div class="title">{{fourList[0].itemName}}</div>
-                    <div class="desc">{{fourList[0].author}}</div>
-                    <div class="author">
+                    <div class="title" v-if="fourList[0]">{{fourList[0].itemName}}</div>
+                    <div class="desc" v-if="fourList[0]">{{fourList[0].author}}</div>
+                    <div class="author" v-if="fourList[0]">
                         {{fourList[0].contentIntroduction}}
                     </div>
                 </div>
             </li>
             <li>
                 <div class="i">
-                    <img :src="fourList[1].imgUrl" alt="">
+                    <img :src="fourList[1]&&fourList[1].imgUrl" alt="">
                 </div>
                 <div class="price">
                     <span>￥</span>
-                    <span>{{fourList[1].price}}</span>
+                    <span v-if="fourList[1]">{{fourList[1].price}}</span>
                 </div>
                 <div class="r">
-                    <div class="title">{{fourList[1].itemName}}</div>
-                    <div class="desc">{{fourList[1].author}}</div>
-                    <div class="author">
+                    <div class="title" v-if="fourList[1]">{{fourList[1].itemName}}</div>
+                    <div class="desc" v-if="fourList[1]">{{fourList[1].author}}</div>
+                    <div class="author" v-if="fourList[1]">
                         {{fourList[1].contentIntroduction}}
                     </div>
                 </div>
             </li>
             <li>
                 <div class="i">
-                    <img :src="fourList[2].imgUrl" alt="">
+                    <img :src="fourList[2]&&fourList[2].imgUrl" alt="">
                 </div>
                 <div class="price">
                     <span>￥</span>
-                    <span>{{fourList[2].price}}</span>
+                    <span v-if="fourList[2]">{{fourList[2].price}}</span>
                 </div>
                 <div class="r">
-                    <div class="title">{{fourList[2].itemName}}</div>
-                    <div class="desc">{{fourList[2].author}}</div>
-                    <div class="author">
+                    <div class="title" v-if="fourList[2]">{{fourList[2].itemName}}</div>
+                    <div class="desc" v-if="fourList[2]">{{fourList[2].author}}</div>
+                    <div class="author" v-if="fourList[2]">
                         {{fourList[2].contentIntroduction}}
                     </div>
                 </div>
@@ -475,32 +475,32 @@
         <ul class="inner">
             <li>
                 <div class="i">
-                    <img :src="maxList[0].imgUrl" alt="">
+                    <img :src="maxList[0]&&maxList[0].imgUrl" alt="">
                 </div>
                 <div class="price">
                     <span>￥</span>
-                    <span>{{maxList[0].price}}</span>
+                    <span v-if="maxList[0]">{{maxList[0].price}}</span>
                 </div>
                 <div class="r">
-                    <div class="title">{{maxList[0].itemName}}</div>
-                    <div class="desc">{{maxList[0].author}}</div>
-                    <div class="author">
+                    <div class="title" v-if="maxList[0]">{{maxList[0].itemName}}</div>
+                    <div class="desc" v-if="maxList[0]">{{maxList[0].author}}</div>
+                    <div class="author" v-if="maxList[0]">
                         {{maxList[0].contentIntroduction}}
                     </div>
                 </div>
             </li>
             <li>
                 <div class="i">
-                    <img :src="maxList[1].imgUrl" alt="">
+                    <img :src="maxList[1]&&maxList[1].imgUrl" alt="">
                 </div>
                 <div class="price">
                     <span>￥</span>
-                    <span>{{maxList[1].price}}</span>
+                    <span v-if="maxList[1]">{{maxList[1].price}}</span>
                 </div>
                 <div class="r">
-                    <div class="title">{{maxList[1].itemName}}</div>
-                    <div class="desc">{{maxList[1].author}}</div>
-                    <div class="author">
+                    <div class="title" v-if="maxList[1]">{{maxList[1].itemName}}</div>
+                    <div class="desc" v-if="maxList[1]">{{maxList[1].author}}</div>
+                    <div class="author" v-if="maxList[1]">
                         {{maxList[1].contentIntroduction}}
                     </div>
                 </div>
@@ -603,12 +603,13 @@ export default {
   name: "Firstbook",
   data() {
     return {
-      firstList: [],
+      firstList:[],
       twoList: [],
       pai: [],
       yi:[],
       thindList:[],
       fourList:[],
+      maxList:[]
     };
   },
   created() {
@@ -620,25 +621,29 @@ export default {
   methods: {
     async handleGetFirstList(cityId) {
       let data = await firstApi(cityId);
-
-      this.firstList = data.result.list[0].data;
+      this.firstList= data.result.list[0].data;
       this.twoList = data.result.list[1].data;
-      //console.log(data);
+      this.firstList == data.result.list[0].data?data.result.list[0].data:"";
+      this.twoList == data.result.list[1].data?data.result.list[1].data:"";
+      console.log(this.firstList);
     },
       async handleGetThindList(cityId) {
        let data = await firstApi(cityId);
        this.thindList = data.result.list[2].data[0].data;
+       this.thindList == data.result.list[2].data[0].data?data.result.list[2].data[0].data:"";
       //  console.log(this.thindList[2]);
      },
       async handleGetFourList(cityId) {
        let data = await firstApi(cityId);
        this.fourList = data.result.list[0].data[0].data;
+      this.fourList == data.result.list[0].data[0].data?data.result.list[0].data[0].data:"";
        //console.log( this.fourList[1]);
      },
       async handleGetMaxList(cityId) {
        let data = await firstApi(cityId);
        this.maxList = data.result.list[1].data[0].data;
-       console.log( this.maxList);
+        this.maxList == data.result.list[1].data[0].data?data.result.list[1].data[0].data:"";
+       //console.log( this.maxList);
      },
   }
 };
