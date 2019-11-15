@@ -1,5 +1,6 @@
 <template>
   <!-- 这是头部哦  -->
+  <Nana-scroll>
   <div class="header">
     <div class="box">
       <img
@@ -406,7 +407,10 @@
             </li>
         </ul>
     </div>
-    <div class="null"></div>
+     <div class="huan">换一换
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAAclBMVEUAAAA2WJk2WJk3WZtEbak2WJk2WZk2WJo3WJo3Wpo4Wps3Wps3W546XaI2WZo3WZo2WJo2WZo5Wps5WZo7W5s9YZ42WZk3WZo2WJo3WZo3WZo2WJk2WJo4Wpo3WZs2WZk3WZo4W5uAgP83WZo4WZk2WJmQgH9YAAAAJXRSTlMA9fBnCN/X6rBWUkIoDujJt5wyLB0VzIXSu6ali3tbUEs5ApBf2p/i4wAAANBJREFUOMvt08kSgjAQBNDMkARiCJss7nv//y+6XBQdLao8cKFPTNc7JExFTRk3IUoM8SK5hJ9Md4S4KNctg7ZahcVRdqlF4U+Pz30Om1aIZJexe047ypwMg+HqdfZMMixx6BcOIqyxeq+WIuww/7ycdOvcqmGJzwNhrf9YqG4Gwk02ENpcKKv44/fM0QlwhuV7tUItQrh+c0CpREjse2dhE2QYGdo9Z8e3Q8vQNy3y/WM4+QI2/bKZpFF6m4HbdVnEoI3+vYv74yKTRI2aMmquGSELMu+krSYAAAAASUVORK5CYII="
+            alt="">
+    </div>
     <div class="auction">
         <span>国学经典</span>
         <span class="g1">更多></span>
@@ -587,6 +591,7 @@
     <div class="huan">--没有更多--</div>
     <div class="null"></div>
   </div>
+  </Nana-scroll>
 </template>
 
 <script>
@@ -619,7 +624,7 @@ export default {
       this.twoList = data.result.list[1].data;
       this.firstList == data.result.list[0].data?data.result.list[0].data:"";
       this.twoList == data.result.list[1].data?data.result.list[1].data:"";
-      console.log(this.firstList);
+      //console.log(this.firstList);
     },
       async handleGetThindList(cityId) {
        let data = await firstApi(cityId);
@@ -644,19 +649,22 @@ export default {
        let data = await firstApi(currPage);
        this.xiaoList = data.result.list[2].data[0].data;
        this.xiaoList == data.result.list[2].data[0].data?data.result.list[2].data[0].data:"";
-       console.log( this.xiaoList);
+       //console.log( this.xiaoList);
      },
   }
 };
 
 </script>
 
-<style>
+<style scoped>
 /* 这是头部哦 */
 .header {
-  height: 100%;
-  width: 100%;
-  padding-bottom: .52rem;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 0.52rem;
 }
 .box {
   height: 0.58rem;

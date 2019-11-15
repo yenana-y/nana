@@ -44,7 +44,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
     .search{
     width:100%;
     height:100%;

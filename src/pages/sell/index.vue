@@ -1,4 +1,5 @@
 <template>
+<Nana-scroll ref="scroll">
   <div class="sell">
     <div class="box">
       <img
@@ -109,217 +110,231 @@
       <span>推荐专场</span>
       <div class="r1"></div>
       <div class="jian">></div>
-    </div>
+    </div> 
   </div>
+</Nana-scroll>
 </template>
 
 <script>
+
 export default {
-  name: "Sell"
+  name: "Sell",
+  data(){
+    return{
+      sell:[]
+    };
+  },
+  mounted(){
+    this.$refs.scroll.handlepullingDown();
+    this.$refs.scroll.handleScroll();
+  }
 };
 </script>
     
 <style>
 .sell {
-  width: 100%;
-  height: 100%;
-  overflow-y:scroll;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 0.52rem;
 }
 /* ////头部 */
 /* ////头部 */
-.box{
-	height:0.58rem;
+.box {
+  height: 0.58rem;
 }
-.box img{
-	width:0.34rem;
-	height:0.34rem;
-	margin-left:0.12rem;
-	margin-top:0.12rem;
-	float:left;
+.box img {
+  width: 0.34rem;
+  height: 0.34rem;
+  margin-left: 0.12rem;
+  margin-top: 0.12rem;
+  float: left;
 }
-.find{
-	width:2.5rem;
-	height:0.34rem;
-	background:#f5f5f5;
-	float:left;
-	margin-top:0.12rem;
-	margin-right:0.1rem;
-	border-radius: 0.15rem;
-	position:relative;
-	margin-left:0.2rem;
+.find {
+  width: 2.5rem;
+  height: 0.34rem;
+  background: #f5f5f5;
+  float: left;
+  margin-top: 0.12rem;
+  margin-right: 0.1rem;
+  border-radius: 0.15rem;
+  position: relative;
+  margin-left: 0.2rem;
 }
-.find p{
-	font-size:0.14rem;
-	height:0.34rem;
-	line-height:0.34rem;
-	margin-left:0.1rem;
-	padding-left:0.3rem;
-	color:#aaaaaa;
+.find p {
+  font-size: 0.14rem;
+  height: 0.34rem;
+  line-height: 0.34rem;
+  margin-left: 0.1rem;
+  padding-left: 0.3rem;
+  color: #aaaaaa;
 }
-.find img{
-	position:absolute;
-	width:0.16rem;
-	height:0.16rem;
-	top:-0.03rem;
-	left:0.01rem;
+.find img {
+  position: absolute;
+  width: 0.16rem;
+  height: 0.16rem;
+  top: -0.03rem;
+  left: 0.01rem;
 }
-.find .t1{
-	position:absolute;
-	width:0.18rem;
-	height:0.18rem;
-	top:-0.03rem;
-	left:2.6rem;
+.find .t1 {
+  position: absolute;
+  width: 0.18rem;
+  height: 0.18rem;
+  top: -0.03rem;
+  left: 2.6rem;
 }
-.pic{
-	height:1.6rem;
+.pic {
+  height: 1.6rem;
 }
-.pic img{
-	height:1.6rem;
+.pic img {
+  height: 1.6rem;
 }
 /* /////图标 */
-.nav_box{
-	width:100%;
-	height:0.71rem;
+.nav_box {
+  width: 100%;
+  height: 0.71rem;
 }
-.nav_box ul{
-	width:3.45rem;
-	height:0.71rem;
-	margin:0 auto;
-	display:flex;
-	justify-content: space-between;
+.nav_box ul {
+  width: 3.45rem;
+  height: 0.71rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
-.nav_box ul li{
-	width:0.48rem;
-	height:0.46rem;
-	margin-top:0.25rem;
+.nav_box ul li {
+  width: 0.48rem;
+  height: 0.46rem;
+  margin-top: 0.25rem;
 }
-.nav_box ul li img{
-	width:0.22rem;
-	height:0.22rem;
-	margin-left:0.11rem;
+.nav_box ul li img {
+  width: 0.22rem;
+  height: 0.22rem;
+  margin-left: 0.11rem;
 }
-.nav_box ul li p{
-	font-size:0.12rem;
-	padding-top:0.1rem;
+.nav_box ul li p {
+  font-size: 0.12rem;
+  padding-top: 0.1rem;
 }
-.action{
-	width:100%;
-	height:0.27rem;
-	margin-top:0.25rem;
+.action {
+  width: 100%;
+  height: 0.27rem;
+  margin-top: 0.25rem;
 }
-.action .s{
-	width:3.45rem;
-	height:1.25rem;
-	margin:0 auto;
-	display:flex;
+.action .s {
+  width: 3.45rem;
+  height: 1.25rem;
+  margin: 0 auto;
+  display: flex;
 }
-.action .s .left{
-	width:1.77rem;
-	height:1.25rem;
-	border-right:0.1px solid #ccc;
-	border-bottom:0.1px solid #ccc;
+.action .s .left {
+  width: 1.77rem;
+  height: 1.25rem;
+  border-right: 0.1px solid #ccc;
+  border-bottom: 0.1px solid #ccc;
 }
-.action .s .left .title{
-	line-height: .21rem;
-    padding: .15rem 0 0 .15rem;
-    font-size: .15rem;
-    color: #262626;
-	font-weight: 350;
+.action .s .left .title {
+  line-height: 0.21rem;
+  padding: 0.15rem 0 0 0.15rem;
+  font-size: 0.15rem;
+  color: #262626;
+  font-weight: 350;
 }
-.action .s .left .num{
-	font-size: .11rem;
-    color: #999;
-    padding-top: 0.05rem;
-    padding-left: .15rem;
+.action .s .left .num {
+  font-size: 0.11rem;
+  color: #999;
+  padding-top: 0.05rem;
+  padding-left: 0.15rem;
 }
-.action .s .left img{
-	float: right;
-    width: 0.8rem;
-    height: 0.6rem;
-    font-size: 0;
-    margin-right: .1rem;
+.action .s .left img {
+  float: right;
+  width: 0.8rem;
+  height: 0.6rem;
+  font-size: 0;
+  margin-right: 0.1rem;
 }
-.action .s .left:nth-child(2){
-	border-right:none;
+.action .s .left:nth-child(2) {
+  border-right: none;
 }
-.action .x{
-	width:3.45rem;
-	height:1.25rem;
-	margin:0 auto;
-	display:flex;
+.action .x {
+  width: 3.45rem;
+  height: 1.25rem;
+  margin: 0 auto;
+  display: flex;
 }
-.action .x .moudle{
-	width:0.88rem;
-	height:1.25rem;
-	border-right:0.1px solid #ccc;
+.action .x .moudle {
+  width: 0.88rem;
+  height: 1.25rem;
+  border-right: 0.1px solid #ccc;
 }
-.action .x .moudle .kuang{
-	font-size: .15rem;
-    color: #262626;
-    padding-top: .15rem;
-	font-weight: 350;
+.action .x .moudle .kuang {
+  font-size: 0.15rem;
+  color: #262626;
+  padding-top: 0.15rem;
+  font-weight: 350;
 }
-.action .x .moudle span{
-	line-height: .21rem;
-	padding-left:0.15rem;
+.action .x .moudle span {
+  line-height: 0.21rem;
+  padding-left: 0.15rem;
 }
-.action .x .moudle p{
-	font-size: .11rem;
-    color: #999;
-    padding-top: 0.05rem;
-	line-height: .21rem;
-	padding-left:0.15rem;
+.action .x .moudle p {
+  font-size: 0.11rem;
+  color: #999;
+  padding-top: 0.05rem;
+  line-height: 0.21rem;
+  padding-left: 0.15rem;
 }
-.action .x .moudle .kuang img{
-	width: 0.69rem;
-    height: 0.55rem;
-    margin: 0 auto;
-    margin-top: .055rem;
-    font-size: 0;
+.action .x .moudle .kuang img {
+  width: 0.69rem;
+  height: 0.55rem;
+  margin: 0 auto;
+  margin-top: 0.055rem;
+  font-size: 0;
 }
-.action .x .moudle:nth-child(4){
-	border-right:0;
+.action .x .moudle:nth-child(4) {
+  border-right: 0;
 }
-.re{
-	width:100%;
-	min-height:1.05rem;
-	margin-top:2.2rem;
-	position: relative;
+.re {
+  width: 100%;
+  min-height: 1.05rem;
+  margin-top: 2.2rem;
+  position: relative;
 }
-.re .l1{
-	width: .1rem;
-    height: 0.5rem;
-    border-bottom: 1px solid #999;
-	margin-right: .12rem;
-	position:absolute;
-	left:1.2rem;
+.re .l1 {
+  width: 0.1rem;
+  height: 0.5rem;
+  border-bottom: 1px solid #999;
+  margin-right: 0.12rem;
+  position: absolute;
+  left: 1.2rem;
 }
-.re span{
-    width:100%;
-    height:1.05rem;
-	line-height:1.05rem;
-	display:block;
-    text-align: center;
-    font-size: .18rem;
-    color: #262626;
-    font-weight: 350;
-    margin-bottom:0.5rem;
+.re span {
+  width: 100%;
+  height: 1.05rem;
+  line-height: 1.05rem;
+  display: block;
+  text-align: center;
+  font-size: 0.18rem;
+  color: #262626;
+  font-weight: 350;
+  margin-bottom: 0.5rem;
 }
-.re .r1{
-	width: .1rem;
-    height: 0.5rem;
-    border-bottom: 1px solid #999;
-	margin-right: .12rem;
-	position:absolute;
-	top:0;
-	right:1.2rem;
+.re .r1 {
+  width: 0.1rem;
+  height: 0.5rem;
+  border-bottom: 1px solid #999;
+  margin-right: 0.12rem;
+  position: absolute;
+  top: 0;
+  right: 1.2rem;
 }
-.re .jian{
-	width:0.2rem;
-	height:0.2rem;
-	position:absolute;
-	top:0.42rem;
-	right:0.1rem;
-	font-size:0.18rem;
+.re .jian {
+  width: 0.2rem;
+  height: 0.2rem;
+  position: absolute;
+  top: 0.42rem;
+  right: 0.1rem;
+  font-size: 0.18rem;
 }
 </style>
