@@ -39,7 +39,16 @@ const router = new VueRouter({
                 flag: false
             },
         },
-
+        {
+            path:"/detail/:id/:name/:price/:img/:auto/:content",
+            name:"detail",
+            component:_=>import("../pages/detail"),
+            // props:true,
+            // meta: {
+            //     flag: true,
+            //     requiredAuth: true
+            // },
+        },
 
     ]
 })

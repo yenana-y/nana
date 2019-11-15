@@ -486,6 +486,7 @@ export default {
 </script>
 
 <style scoped>
+<<<<<<< HEAD
 .header {
   width: 100%;
   height: 0.44rem;
@@ -543,6 +544,65 @@ export default {
   width: 100%;
   min-height: 0.2rem;
   border-bottom: 8px solid #f3f3f3;
+=======
+    .header{
+    width:100%;
+    height:0.44rem;
+    text-align:center;
+    line-height:0.44rem;
+    font-size: .16rem;
+    color: #262626;
+    font-weight:700;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:#fff;
+}
+.big{
+    width:100%;
+    height:100%;
+    overflow:auto;
+    padding-bottom:0.5rem;
+}
+.pic img{
+    width:100%;
+    height:1.6rem;
+    margin-top:0.44rem;
+}
+.nav{
+	width:3.45rem;
+	height:1.19rem;
+	margin:0 auto;
+}
+.nav ul{
+	width:3.45rem;
+	height:0.77rem;
+	margin:0 auto;
+	margin-top:0.1rem;
+	float:left;
+}
+.nav ul li{
+	width:0.69rem;
+	height:0.63rem;
+	margin-top:0.13rem;
+	float:left;
+}
+.nav ul li img{
+	width:0.44rem;
+	height:0.44rem;
+	margin:0 auto;
+}
+.nav ul li p{
+	text-align:center;
+	padding-top:0.03rem;
+}
+.null{
+	width:100%;
+	min-height:0.2rem;
+	border-bottom:8px solid #f3f3f3;
+>>>>>>> ljy
 }
 /* 名家专区 */
 .ming {

@@ -18,7 +18,9 @@
           alt
         />
         <p>忘记密码?</p>
-        <div class="btn">登录</div>
+         <router-link tag="div" to="/firstbook" type="text" class="btn" value="登录">登录</router-link>
+        <!-- <div class="btn">登录</div> -->
+       
         <div class="duan">
           <span>短信验证码登录</span>
           <span>注册</span>
@@ -49,7 +51,7 @@
   </div>
 </template>
 
-<script>
+<script scoped>
 export default {
   name: "Login"
 };
