@@ -1,6 +1,6 @@
 <template>
   <!-- 这是头部哦  -->
-  <Nana-scroll>
+  <Nana-scroll ref="scroll">
   <div class="header">
     <div class="box">
       <img
@@ -610,8 +610,16 @@ export default {
       fourList:[],
       maxList:[],
       xiaoList:[],
-      checked: true
+      checked: true,
     };
+  },
+  watch:{
+      firstList(){
+        // console.log("更新了")
+        this.$refs.scroll.handlefinishPullDown(()=>{
+          this.handleGetFirstList(1);
+        });
+      }
   },
   created() {
     this.handleGetFirstList(1);
@@ -620,7 +628,17 @@ export default {
     this.handleGetMaxList(4);
     this.handleGetXiaoList(4);
   },
+mounted(){
+    this.$refs.scroll.handlepullingDown(()=>{
+      this.handleGetFirstList(1);
+    });
 
+    //上拉加载更多
+    this.$refs.scroll.handlepullingUp(()=>{
+        console.log(111);
+    });
+    this.$refs.scroll.handleScroll();
+  },
   methods: {
     async handleGetFirstList(cityId) {
       let data = await firstApi(cityId);
@@ -663,12 +681,9 @@ export default {
 <style scoped>
 /* 这是头部哦 */
 .header {
-  position: absolute;
-  top:0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  width:100%;
   padding-bottom: 0.52rem;
+  background:#fff;
 }
 .box {
   height: 0.58rem;
@@ -837,7 +852,7 @@ export default {
   overflow-x: scroll;
 }
 .sev_ton {
-  width: 10rem;
+  width: 100%;
   height: 100%;
   overflow-x: auto;
   display: flex;
@@ -896,7 +911,7 @@ export default {
   overflow-x: scroll;
 }
 .one .one_big {
-  width: 10rem;
+  width: 100%;
   height: 2.04rem;
   overflow-x: auto;
   display: flex;

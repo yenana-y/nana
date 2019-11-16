@@ -1,6 +1,6 @@
 <template>
-  <Nana-scroll>
-    <div class="page">
+  <Nana-scroll ref="scroll">
+   
       <div class="bookshop">
         <div class="header">书店区</div>
         <div class="big">
@@ -442,7 +442,7 @@
           </div>
         </div>
       </div>
-    </div>
+    
   </Nana-scroll>
 </template>
 
@@ -461,6 +461,20 @@ export default {
     this.handleGetFirstList(5);
     this.handleGetFirst1List(5);
     this.handleGetFirstpicList(5);
+  },
+  watch:{
+      firstList(){
+        // console.log("更新了")
+        this.$refs.scroll.handlefinishPullDown(()=>{
+          this.handleGetFirstList(1);
+        });
+      }
+  },
+  mounted(){
+    this.$refs.scroll.handlepullingDown(()=>{
+      this.handleGetFirstList(1);
+    });
+    this.$refs.scroll.handleScroll();
   },
   methods: {
     ///图片加书名
@@ -486,65 +500,9 @@ export default {
 </script>
 
 <style scoped>
-<<<<<<< HEAD
-.header {
-  width: 100%;
-  height: 0.44rem;
-  text-align: center;
-  line-height: 0.44rem;
-  font-size: 0.16rem;
-  color: #262626;
-  font-weight: 700;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #fff;
-}
-.big {
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  padding-bottom: 0.5rem;
-}
-.pic img {
-  width: 100%;
-  height: 1.6rem;
-  margin-top: 0.44rem;
-}
-.nav {
-  width: 3.45rem;
-  height: 1.19rem;
-  margin: 0 auto;
-}
-.nav ul {
-  width: 3.45rem;
-  height: 0.77rem;
-  margin: 0 auto;
-  margin-top: 0.1rem;
-  float: left;
-}
-.nav ul li {
-  width: 0.69rem;
-  height: 0.63rem;
-  margin-top: 0.13rem;
-  float: left;
-}
-.nav ul li img {
-  width: 0.44rem;
-  height: 0.44rem;
-  margin: 0 auto;
-}
-.nav ul li p {
-  text-align: center;
-  padding-top: 0.03rem;
-}
-.null {
-  width: 100%;
-  min-height: 0.2rem;
-  border-bottom: 8px solid #f3f3f3;
-=======
+    .bookshop{
+      background:#fff;
+    }
     .header{
     width:100%;
     height:0.44rem;
@@ -557,7 +515,7 @@ export default {
     top:0;
     left:0;
     right:0;
-    bottom:0;
+    /* bottom:0; */
     background:#fff;
 }
 .big{
@@ -602,7 +560,6 @@ export default {
 	width:100%;
 	min-height:0.2rem;
 	border-bottom:8px solid #f3f3f3;
->>>>>>> ljy
 }
 /* 名家专区 */
 .ming {

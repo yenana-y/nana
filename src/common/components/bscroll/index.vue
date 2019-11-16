@@ -23,28 +23,32 @@ export default {
       pullDownRefresh: true,
       ////开启上拉加载更多
       pullUpLoad: true, 
+      tap:true,
+      click:true,
+      // freeScroll: true,
+      scrollX: true,
       ///scroll 事件配置项 主要解决下拉触碰页面加载
       probeType:1
     });
   },
   methods: {
     handleScroll(){
+      // this.scroll.on("scroll",this.handleScrollCb)
       this.scroll.on("scroll",this.handleScrollCb)
     },
     handleScrollCb({y}){
-        if(y>30 && (!this.loadingFlag)){
+        if(y>50){
           
           this.loadingFlag=true;
-          console.log(12314)
-          // this.scroll.off("scroll",this.handleScrollCb)
-
+          //console.log(12314)
+          //this.scroll.off("scroll",this.handleScrollCb)
         }
     },
     ////下拉刷新
-    handlepullingDown() {
+    handlepullingDown(callback) {
       this.scroll.on("pullingDown", () => {
-        // console.log(123);
-        // callback()
+         //console.log(123);
+         callback()
       });
     },
     handlefinishPullDown() {
@@ -55,15 +59,28 @@ export default {
       //this.loadingFlag=false;
       setTimeout(()=>{
         this.loadingFlag=false;
-      },500)
+      },1000)
+    },
+    //上拉加载更多
+    handlepullingUp(callback){
+      this.scroll.on("pullingUp",()=>{
+          callback();
+      })
+    },
+    handlefinishPullUp(){
+      //通过better-scroll可以进行下一次加载
+      this.scroll.finishPullUp();
+      //重新计算better-scroll
+      this.scroll.refresh();
     }
   }
+
 };
 </script>
   
 <style>
   .wrapper,.scroll_container{
-    /* height:100%; */
+    height:100%;
     overflow: hidden;
   }
   .scroll_loading{
